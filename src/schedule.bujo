@@ -1,0 +1,61 @@
+{
+  "name" : "Test Week",
+  "events" : [ {
+    "name" : "Test Event",
+    "description" : "This is my test event",
+    "dayOfWeek" : "MONDAY",
+    "startTime" : "12:00",
+    "duration" : 45
+  } ],
+  "tasks" : [ {
+    "name" : "Test Task",
+    "description" : "Tuesday",
+    "dayOfWeek" : "TUESDAY",
+    "complete" : false
+  } ],
+  "days" : [ {
+    "name" : "SUNDAY",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "name" : "MONDAY",
+    "events" : [ {
+      "name" : "Test Event",
+      "description" : "This is my test event",
+      "dayOfWeek" : "MONDAY",
+      "startTime" : "12:00",
+      "duration" : 45
+    } ],
+    "tasks" : [ ]
+  }, {
+    "name" : "TUESDAY",
+    "events" : [ ],
+    "tasks" : [ {
+      "name" : "Test Task",
+      "description" : "Tuesday",
+      "dayOfWeek" : "TUESDAY",
+      "complete" : false
+    } ]
+  }, {
+    "name" : "WEDNESDAY",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "name" : "THURSDAY",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "name" : "FRIDAY",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "name" : "SATURDAY",
+    "events" : [ ],
+    "tasks" : [ ]
+  } ],
+  "maxTasks" : 100,
+  "maxEvents" : 100,
+  "numEvents" : 1,
+  "numTasks" : 1,
+  "percentTasksComplete" : 0.0
+}

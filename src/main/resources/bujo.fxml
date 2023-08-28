@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene fx:id="mainScene" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+            <AnchorPane prefHeight="850.0" prefWidth="1241.0">
+            <children>
+               <VBox layoutX="-1.0" prefHeight="853.0">
+                  <children>
+                     <HBox prefHeight="57.0" prefWidth="1289.0">
+                        <children>
+                           <Label fx:id="weekNameLabel" alignment="CENTER" prefHeight="55.0" prefWidth="124.0" text="Week Name:">
+                              <font>
+                                 <Font name="System Bold Italic" size="20.0" />
+                              </font>
+                           </Label>
+                           <TextField fx:id="weekName" prefHeight="61.0" prefWidth="272.0" />
+                           <Button fx:id="saveName" mnemonicParsing="false" prefHeight="55.0" prefWidth="126.0" text="Save Name">
+                              <font>
+                                 <Font size="18.0" />
+                              </font>
+                           </Button>
+                           <Button fx:id="addEvent" mnemonicParsing="false" prefHeight="55.0" prefWidth="140.0" text="+ Add Event">
+                              <font>
+                                 <Font size="20.0" />
+                              </font>
+                           </Button>
+                           <Button fx:id="addTask" mnemonicParsing="false" prefHeight="55.0" prefWidth="135.0" text="+ Add Task">
+                              <font>
+                                 <Font size="20.0" />
+                              </font>
+                           </Button>
+                           <MenuButton fx:id="themeDrop" mnemonicParsing="false" prefHeight="55.0" prefWidth="128.0" text="Theme">
+                             <items>
+                               <MenuItem fx:id="lightOption" mnemonicParsing="false" text="Light" />
+                               <MenuItem fx:id="darkOption" mnemonicParsing="false" text="Dark" />
+                                 <MenuItem fx:id="minimalOption" mnemonicParsing="false" text="Minimal" />
+                             </items>
+                              <font>
+                                 <Font size="20.0" />
+                              </font>
+                           </MenuButton>
+                           <Button fx:id="save" mnemonicParsing="false" prefHeight="46.0" prefWidth="102.0" text="Save">
+                              <font>
+                                 <Font size="20.0" />
+                              </font>
+                           </Button>
+                           <Button fx:id="open" mnemonicParsing="false" prefHeight="46.0" prefWidth="101.0" text="Open">
+                              <font>
+                                 <Font size="20.0" />
+                              </font>
+                           </Button>
+                     <Button fx:id="setMaxMainButton" mnemonicParsing="false" prefHeight="46.0" prefWidth="163.0" text="Set Max">
+                        <font>
+                           <Font size="20.0" />
+                        </font>
+                     </Button>
+                        </children>
+                     </HBox>
+                     <HBox prefHeight="496.0" prefWidth="1289.0">
+                        <children>
+                           <VBox prefHeight="302.0" prefWidth="184.0">
+                              <children>
+                                 <Pane prefHeight="80.0" prefWidth="184.0">
+                                    <children>
+                                       <Label alignment="CENTER" layoutX="37.0" layoutY="11.0" prefHeight="60.0" prefWidth="115.0" text="Sunday">
+                                          <font>
+                                             <Font size="24.0" />
+                                          </font>
+                                       </Label>
+                                    </children>
+                                 </Pane>
+                                 <ScrollPane prefHeight="421.0" prefWidth="186.0">
+                                   <content>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1500.0" prefWidth="250.0">
+                                          <children>
+                                             <VBox fx:id="sundayVbox" prefHeight="1500.0" prefWidth="250.0" />
+                                          </children>
+                                       </AnchorPane>
+                                   </content>
+                                 </ScrollPane>
+                              </children>
+                           </VBox>
+                           <VBox prefHeight="421.0" prefWidth="184.0">
+                              <children>
+                                 <Pane prefHeight="80.0" prefWidth="184.0">
+                                    <children>
+                                       <Label alignment="CENTER" layoutX="35.0" layoutY="9.0" prefHeight="60.0" prefWidth="115.0" text="Monday">
+                                          <font>
+                                             <Font size="24.0" />
+                                          </font>
+                                       </Label>
+                                    </children>
+                                 </Pane>
+                                 <ScrollPane prefHeight="421.0" prefWidth="186.0">
+                                   <content>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1500.0" prefWidth="250.0">
+                                          <children>
+                                             <VBox fx:id="mondayVbox" prefHeight="1527.0" prefWidth="250.0" />
+                                          </children>
+                                       </AnchorPane>
+                                   </content>
+                                 </ScrollPane>
+                              </children>
+                           </VBox>
+                           <VBox prefHeight="200.0" prefWidth="184.0">
+                              <children>
+                                 <Pane prefHeight="80.0" prefWidth="200.0">
+                                    <children>
+                                       <Label alignment="CENTER" layoutX="29.0" layoutY="12.0" prefHeight="60.0" prefWidth="115.0" text="Tuesday">
+                                          <font>
+                                             <Font size="24.0" />
+                                          </font>
+                                       </Label>
+                                    </children>
+                                 </Pane>
+                                 <ScrollPane prefHeight="421.0" prefWidth="186.0">
+                                   <content>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1500.0" prefWidth="250.0">
+                                          <children>
+                                             <VBox fx:id="tuesdayVbox" prefHeight="1500.0" prefWidth="250.0" />
+                                          </children>
+                                       </AnchorPane>
+                                   </content>
+                                 </ScrollPane>
+                              </children>
+                           </VBox>
+                           <VBox prefHeight="200.0" prefWidth="184.0">
+                              <children>
+                                 <Pane prefHeight="80.0" prefWidth="200.0">
+                                    <children>
+                                       <Label alignment="CENTER" layoutX="20.0" layoutY="13.0" prefHeight="58.0" prefWidth="139.0" text="Wednesday">
+                                          <font>
+                                             <Font size="24.0" />
+                                          </font>
+                                       </Label>
+                                    </children>
+                                 </Pane>
+                                 <ScrollPane prefHeight="421.0" prefWidth="186.0">
+                                   <content>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1500.0" prefWidth="250.0">
+                                          <children>
+                                             <VBox fx:id="wednesdayVbox" prefHeight="1500.0" prefWidth="250.0" />
+                                          </children>
+                                       </AnchorPane>
+                                   </content>
+                                 </ScrollPane>
+                              </children>
+                           </VBox>
+                           <VBox prefHeight="200.0" prefWidth="184.0">
+                              <children>
+                                 <Pane prefHeight="80.0" prefWidth="200.0">
+                                    <children>
+                                       <Label alignment="CENTER" layoutX="17.0" layoutY="17.0" prefHeight="44.0" prefWidth="141.0" text="Thursday">
+                                          <font>
+                                             <Font size="24.0" />
+                                          </font>
+                                       </Label>
+                                    </children>
+                                 </Pane>
+                                 <ScrollPane prefHeight="421.0" prefWidth="186.0">
+                                   <content>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1500.0" prefWidth="250.0">
+                                          <children>
+                                             <VBox fx:id="thursdayVbox" prefHeight="1500.0" prefWidth="250.0" />
+                                          </children>
+                                       </AnchorPane>
+                                   </content>
+                                 </ScrollPane>
+                              </children>
+                           </VBox>
+                           <VBox prefHeight="200.0" prefWidth="184.0">
+                              <children>
+                                 <Pane prefHeight="80.0" prefWidth="200.0">
+                                    <children>
+                                       <Label alignment="CENTER" layoutX="77.0" layoutY="32.0" text="Friday">
+                                          <font>
+                                             <Font size="24.0" />
+                                          </font>
+                                       </Label>
+                                    </children>
+                                 </Pane>
+                                 <ScrollPane prefHeight="421.0" prefWidth="186.0">
+                                   <content>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1500.0" prefWidth="250.0">
+                                          <children>
+                                             <VBox fx:id="fridayVbox" prefHeight="1500.0" prefWidth="250.0" />
+                                          </children>
+                                       </AnchorPane>
+                                   </content>
+                                 </ScrollPane>
+                              </children>
+                           </VBox>
+                           <VBox prefHeight="200.0" prefWidth="184.0">
+                              <children>
+                                 <Pane prefHeight="80.0" prefWidth="200.0">
+                                    <children>
+                                       <Label layoutX="37.0" layoutY="23.0" text="Saturday">
+                                          <font>
+                                             <Font size="24.0" />
+                                          </font>
+                                       </Label>
+                                    </children>
+                                 </Pane>
+                                 <ScrollPane prefHeight="421.0" prefWidth="186.0">
+                                   <content>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1500.0" prefWidth="250.0">
+                                          <children>
+                                             <VBox fx:id="saturdayVbox" prefHeight="1500.0" prefWidth="250.0" />
+                                          </children>
+                                       </AnchorPane>
+                                   </content>
+                                 </ScrollPane>
+                              </children>
+                           </VBox>
+                        </children>
+                     </HBox>
+                     <HBox prefHeight="308.0" prefWidth="1289.0">
+                        <children>
+                           <VBox prefHeight="200.0" prefWidth="644.5">
+                              <children>
+                                 <Label alignment="CENTER" prefHeight="77.0" prefWidth="715.0" text="Weekly Overview">
+                                    <font>
+                                       <Font size="36.0" />
+                                    </font>
+                                 </Label>
+                                 <HBox prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                       <Label alignment="CENTER" prefHeight="82.0" prefWidth="129.0" text="Events:">
+                                          <font>
+                                             <Font size="24.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="eventsOverview" prefHeight="82.0" prefWidth="542.0" />
+                                    </children>
+                                 </HBox>
+                                 <HBox prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                       <Label alignment="CENTER" prefHeight="82.0" prefWidth="117.0" text="Tasks:">
+                                          <font>
+                                             <Font size="24.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="tasksOverview" prefHeight="82.0" prefWidth="542.0" />
+                                    </children>
+                                 </HBox>
+                                 <HBox prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                       <Label alignment="CENTER" prefHeight="82.0" prefWidth="350.0" text="Percent Complete">
+                                          <font>
+                                             <Font size="24.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="percentComplete" prefHeight="82.0" prefWidth="542.0" />
+                                    </children>
+                                 </HBox>
+                              </children>
+                           </VBox>
+                           <VBox fx:id="taskQueue" prefHeight="306.0" prefWidth="644.0">
+                              <children>
+                                 <Label alignment="CENTER" minHeight="77.0" prefWidth="715.0" text="Task Queue">
+                                    <font>
+                                       <Font size="36.0" />
+                                    </font>
+                                 </Label>
+                              </children>
+                           </VBox>
+                        </children>
+                     </HBox>
+                  </children>
+               </VBox>
+            </children></AnchorPane>
+        </Scene>
